@@ -81,6 +81,9 @@ class Settings(BaseSettings):
     
     # Verification settings
     VERIFICATION_TOKEN_EXPIRE_HOURS: int = 24
+    
+    # Slack Configuration
+    SLACK_WEBHOOK_URL: str = ""
 
     # For pydantic v2, use SettingsConfigDict instead of Config class
     model_config = SettingsConfigDict(

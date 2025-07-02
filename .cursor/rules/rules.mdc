@@ -11,3 +11,9 @@ Use uv for Python environment management. Here’s how:
 - To run general commands in the environment (e.g., CLI commands), run: uv run
 
 # TypeScript (frontend)
+
+# Database
+If there's anything in this application that needs a database, we use SQLite.
+
+# Deployment 
+This application is deployed using Coolify. The frontend and backend is each deployed as an application in a project called "kasperjunge.com"

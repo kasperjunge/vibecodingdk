@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Button } from './ui/Button'
 import { Mail, MapPin, Linkedin, Mic, Send } from 'lucide-react'
+import { apiCall } from '../config/api'
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -26,21 +27,29 @@ const Contact: React.FC = () => {
     setIsSubmitting(true)
     
     try {
-      // For now, we'll simulate a form submission
-      // In production, this would be replaced with actual form service integration
-      await new Promise(resolve => setTimeout(resolve, 1000))
-      
-      // Here you would integrate with a service like Formspree, Netlify Forms, or EmailJS
-      console.log('Form data:', formData)
-      
-      setSubmitStatus('success')
-      setFormData({
-        name: '',
-        company: '',
-        email: '',
-        inquiryType: 'workshop',
-        message: ''
+      const result = await apiCall('/contact', {
+        method: 'POST',
+        body: JSON.stringify({
+          name: formData.name,
+          company: formData.company,
+          email: formData.email,
+          inquiry_type: formData.inquiryType,
+          message: formData.message
+        }),
       })
+      
+      if (result.success) {
+        setSubmitStatus('success')
+        setFormData({
+          name: '',
+          company: '',
+          email: '',
+          inquiryType: 'workshop',
+          message: ''
+        })
+      } else {
+        setSubmitStatus('error')
+      }
     } catch (error) {
       console.error('Form submission error:', error)
       setSubmitStatus('error')
