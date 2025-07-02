@@ -14,7 +14,7 @@ def main() -> None:
     reload = settings.ENVIRONMENT == "dev"
 
     uvicorn.run(
-        "backend.main:app", 
+        "backend.app:app", 
         host=settings.BACKEND_HOST, 
         port=settings.BACKEND_PORT, 
         reload=reload

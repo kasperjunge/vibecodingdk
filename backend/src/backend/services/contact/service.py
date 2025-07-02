@@ -88,7 +88,7 @@ class ContactService:
                     logger.info(f"Successfully sent contact form to Slack for {contact_data.email}")
                     return True
                 else:
-                    logger.error(f"Failed to send to Slack. Status: {response.status_code}, Response: {response.text}")
+                    logger.error(f"Failed to send to Slack for {contact_data.email}. Status: {response.status_code}, Response: {response.text}")
                     return False
 
         except httpx.TimeoutException:
