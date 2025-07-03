@@ -18,7 +18,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </div>
             <div className="flex gap-6">
               <a 
-                href="https://linkedin.com/in/kasperjunge" 
+                href="https://www.linkedin.com/in/kasper-juunge/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
@@ -26,7 +26,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 LinkedIn
               </a>
               <a 
-                href="https://verbos.dk" 
+                href="https://podcasts.apple.com/dk/podcast/verbos-ai-og-softwareudvikling/id1650151292" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"

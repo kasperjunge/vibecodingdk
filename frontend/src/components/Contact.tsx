@@ -152,8 +152,8 @@ const Contact: React.FC = () => {
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
                   >
                     <option value="workshop">Workshop</option>
-                    <option value="speaking">Speaking Engagement</option>
-                    <option value="consulting">Consulting</option>
+                    <option value="speaking">Foredrag & Konferencer</option>
+                    <option value="consulting">Rådgivning</option>
                     <option value="general">Generel forespørgsel</option>
                   </select>
                 </div>
@@ -226,9 +226,9 @@ const Contact: React.FC = () => {
 
               <div className="space-y-4">
                 <h4 className="font-semibold text-gray-900 dark:text-white">Følg mig</h4>
-                <div className="flex gap-4">
+                <div className="flex flex-wrap gap-4">
                   <a
-                    href="https://linkedin.com/in/kasperjunge"
+                    href="https://www.linkedin.com/in/kasper-juunge/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
@@ -237,13 +237,24 @@ const Contact: React.FC = () => {
                     LinkedIn
                   </a>
                   <a
-                    href="https://verbos.dk"
+                    href="https://podcasts.apple.com/dk/podcast/verbos-ai-og-softwareudvikling/id1650151292"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors"
                   >
                     <Mic className="w-5 h-5" />
                     Verbos Podcast
+                  </a>
+                  <a
+                    href="https://www.youtube.com/channel/UCB1Cg40cN77lhbKBColnbCA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
+                  >
+                    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                    YouTube
                   </a>
                 </div>
               </div>

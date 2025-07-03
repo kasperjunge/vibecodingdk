@@ -23,7 +23,6 @@ const Hero: React.FC = () => {
                 alt="Kasper Junge - Lead AI Engineer & Workshop Facilitator"
                 className="w-80 h-80 lg:w-96 lg:h-96 rounded-full object-cover shadow-2xl border-4 border-white dark:border-gray-700"
               />
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-600/20 to-indigo-600/20"></div>
             </div>
           </div>
 

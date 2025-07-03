@@ -109,30 +109,24 @@ def generate_openapi_summary(openapi_schema: Dict[str, Any]) -> str:
 
 
 def dump_openapi_schema_and_summary(app) -> None:
-    """Dump the OpenAPI schema to JSON and generate a Markdown summary in the agent/ directory."""
+    """Generate a Markdown summary of the OpenAPI schema in the docs/agent/API directory."""
     try:
         # Get the OpenAPI schema from the FastAPI app
         openapi_schema = app.openapi()
         
-        # Define the output paths (agent/ directory in project root)
+        # Define the output paths (docs/agent/API/ directory in project root)
         project_root = Path(__file__).parent.parent.parent.parent
-        agent_dir = project_root / "agent"
-        schema_path = agent_dir / "openapi.json"
-        summary_path = agent_dir / "API_SUMMARY.md"
+        api_dir = project_root / "docs" / "agent" / "API"
+        summary_path = api_dir / "API_SUMMARY.md"
         
-        # Ensure the agent directory exists
-        agent_dir.mkdir(exist_ok=True)
-        
-        # Write the full schema to JSON file
-        with open(schema_path, "w", encoding="utf-8") as f:
-            json.dump(openapi_schema, f, indent=2, ensure_ascii=False)
+        # Ensure the API directory exists
+        api_dir.mkdir(parents=True, exist_ok=True)
         
         # Generate and write the Markdown summary
         markdown_summary = generate_openapi_summary(openapi_schema)
         with open(summary_path, "w", encoding="utf-8") as f:
             f.write(markdown_summary)
         
-        print(f"✅ OpenAPI schema dumped to: {schema_path}")
         print(f"✅ API summary generated: {summary_path}")
         
     except Exception as e:

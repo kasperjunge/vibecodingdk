@@ -1,46 +1,47 @@
 import React from 'react'
 import { Button } from './ui/Button'
-import { Check, Calendar, Users, Clock, Star } from 'lucide-react'
+import { Check, Calendar, Users, Clock, Star, ArrowRight } from 'lucide-react'
 
 const Workshop: React.FC = () => {
   const workshopFeatures = [
-    "Hands-on AI værktøjsintegrering",
-    "Praktiske coding sessioner",
-    "Reelle case studies fra danske virksomheder",
-    "Personlige følg-op sessioner",
-    "Omfattende materialer og ressourcer",
-    "Netværk med andre tech-ledere"
+    "Hands-on øvelser med jeres egen kode",
+    "Avancerede prompt engineering teknikker",
+    "Automatisering af repetitive tasks",
+    "Integration med populære IDE'er",
+    "Code review og debugging med AI",
+    "Refactoring og optimeringsteknikker",
+    "Best practices for AI-assisteret udvikling",
+    "Sikkerhed og etik i AI-værktøjer",
+    "Team workflows og samarbejdsstrategier",
+    "Måling og optimering af AI-produktivitet"
   ]
 
   const dayStructure = [
     {
       day: "Dag 1",
-      title: "Fundamentals & Greenfield Practice",
+      title: "Grundlæggende AI-værktøjer",
       topics: [
-        "AI værktøjsoversigt og -evaluering",
-        "Hands-on implementering af populære AI-værktøjer",
-        "Best practices for AI-integration",
-        "Team onboarding strategier"
+        "Introduktion til AI-værktøjer for udviklere",
+        "Opsætning og konfiguration",
+        "Basis prompt engineering",
+        "Code generation og completion",
+        "Debugging og fejlfinding",
+        "Hands-on øvelser"
       ]
     },
     {
-      day: "Dag 2",
-      title: "Real-World Application (Valgfri)",
+      day: "Dag 2", 
+      title: "Avancerede teknikker",
       topics: [
-        "Arbejde med eksisterende codebase",
-        "Legacy system integration",
-        "Skalering og performance optimering",
-        "Måling af ROI og success metrics"
+        "Avanceret prompt engineering",
+        "Workflow automation",
+        "Code review og refactoring",
+        "Team integration",
+        "Produktivitetsmåling",
+        "Implementeringsplan for jeres team"
       ]
     }
   ]
-
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact')
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
 
   return (
     <section id="workshop" className="py-20 bg-gray-50 dark:bg-gray-800">
@@ -121,6 +122,134 @@ const Workshop: React.FC = () => {
           </div>
         </div>
 
+        {/* Pricing */}
+        <div className="max-w-4xl mx-auto mb-16">
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+            Vælg din pakke
+          </h3>
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Free Consultation */}
+            <div className="relative p-8 bg-white dark:bg-gray-900 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
+              <div className="text-center">
+                <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                  Gratis Konsultation
+                </h4>
+                <div className="mb-4">
+                  <span className="text-4xl font-bold text-green-600">Gratis</span>
+                </div>
+                <p className="text-gray-600 dark:text-gray-300 mb-6">
+                  30 minutters uforpligtende møde om jeres AI-behov
+                </p>
+                <ul className="space-y-3 mb-8 text-left">
+                  <li className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-600 dark:text-gray-300">AI-readiness vurdering</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-600 dark:text-gray-300">Skræddersyet anbefaling</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-600 dark:text-gray-300">Ingen forpligtelse</span>
+                  </li>
+                </ul>
+                <Button 
+                  className="w-full"
+                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  Book gratis møde
+                </Button>
+              </div>
+            </div>
+
+            {/* Standard Workshop */}
+            <div className="relative p-8 bg-white dark:bg-gray-900 rounded-lg shadow-lg border-2 border-blue-500">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <div className="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-medium">
+                  Mest populære
+                </div>
+              </div>
+              <div className="text-center">
+                <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                  Standard Workshop
+                </h4>
+                <div className="mb-4">
+                  <span className="text-4xl font-bold text-gray-900 dark:text-white">30.000</span>
+                  <span className="text-lg text-gray-500 dark:text-gray-400 ml-2">DKK</span>
+                </div>
+                <p className="text-gray-600 dark:text-gray-300 mb-6">
+                  Komplet 2-dages workshop for dit team
+                </p>
+                <ul className="space-y-3 mb-8 text-left">
+                  <li className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-600 dark:text-gray-300">2 dages intensiv training</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-600 dark:text-gray-300">Op til 20 deltagere</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-600 dark:text-gray-300">Materialer og værktøjer</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-600 dark:text-gray-300">30 dages opfølgning</span>
+                  </li>
+                </ul>
+                <Button 
+                  className="w-full"
+                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  Vælg Standard
+                </Button>
+              </div>
+            </div>
+
+            {/* Premium Workshop */}
+            <div className="relative p-8 bg-white dark:bg-gray-900 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
+              <div className="text-center">
+                <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                  Premium Workshop
+                </h4>
+                <div className="mb-4">
+                  <span className="text-4xl font-bold text-gray-900 dark:text-white">60.000</span>
+                  <span className="text-lg text-gray-500 dark:text-gray-400 ml-2">DKK</span>
+                </div>
+                <p className="text-gray-600 dark:text-gray-300 mb-6">
+                  Workshop + 3 måneders mentoring
+                </p>
+                <ul className="space-y-3 mb-8 text-left">
+                  <li className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-600 dark:text-gray-300">Alt fra Standard</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-600 dark:text-gray-300">3 måneders mentoring</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-600 dark:text-gray-300">Månedlige check-ins</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-600 dark:text-gray-300">Prioritet support</span>
+                  </li>
+                </ul>
+                <Button 
+                  className="w-full"
+                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  Vælg Premium
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Features */}
         <div className="max-w-4xl mx-auto mb-16">
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center">
@@ -136,44 +265,22 @@ const Workshop: React.FC = () => {
           </div>
         </div>
 
-        {/* ROI Section */}
-        <div className="max-w-4xl mx-auto mb-16">
-          <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-8 text-center">
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-              Return on Investment
-            </h3>
-            <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-              Gennemsnitlige teams rapporterer <strong>25-40% produktivitetsstigning</strong> inden for de første 3 måneder efter workshoppen
-            </p>
-            <div className="grid md:grid-cols-3 gap-6 text-center">
-              <div>
-                <div className="text-2xl font-bold text-blue-600 mb-2">25-40%</div>
-                <div className="text-gray-600 dark:text-gray-300">Produktivitetsstigning</div>
-              </div>
-              <div>
-                <div className="text-2xl font-bold text-green-600 mb-2">60%</div>
-                <div className="text-gray-600 dark:text-gray-300">Hurtigere code reviews</div>
-              </div>
-              <div>
-                <div className="text-2xl font-bold text-purple-600 mb-2">50%</div>
-                <div className="text-gray-600 dark:text-gray-300">Færre bugs i production</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* CTA */}
-        <div className="text-center">
+        <div className="max-w-2xl mx-auto text-center">
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+            Klar til at revolutionere dit teams AI-workflow?
+          </h3>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+            Kontakt mig for at diskutere dine specifikke behov og få et skræddersyet tilbud.
+          </p>
           <Button 
             size="lg" 
-            onClick={scrollToContact}
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             className="text-lg px-8 py-4 h-auto"
           >
-            Book Workshop Nu
+            Kontakt mig nu
+            <ArrowRight className="w-5 h-5" />
           </Button>
-          <p className="text-sm text-gray-600 dark:text-gray-300 mt-4">
-            Kontakt mig for at diskutere tilpasning til jeres specifikke behov
-          </p>
         </div>
       </div>
     </section>

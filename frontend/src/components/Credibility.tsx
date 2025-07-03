@@ -12,6 +12,23 @@ const Credibility: React.FC = () => {
       icon: <Calendar className="w-8 h-8 text-blue-600" />,
       title: "Keynote Speaker - AI Day 2025 Aarhus",
       description: "Hovedtaler på Nordens største AI-konference"
+    },
+    {
+      icon: <Mic className="w-8 h-8 text-purple-600" />,
+      title: "Citeret i Folketinget om danske sprogmodeller",
+      description: (
+        <span>
+          Citeret af Mona Juul fra Folketingets talerstol i debat om danske AI-modeller.{' '}
+          <a 
+            href="https://youtube.com/shorts/4PWvRZRSEds?si=qDFDMwwkGUsTEAEL" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-blue-600 dark:text-blue-400 hover:underline"
+          >
+            Se videoen her
+          </a>
+        </span>
+      )
     }
   ]
 
@@ -75,11 +92,11 @@ const Credibility: React.FC = () => {
         {/* Achievements */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center">
-            Højtidspunkter
+            Anerkendelse & Milepæle
           </h3>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {achievements.map((achievement, index) => (
-              <div key={index} className="flex items-start gap-4 p-6 bg-gray-50 dark:bg-gray-800 rounded-lg">
+              <div key={index} className="flex flex-col items-center gap-4 p-6 bg-gray-50 dark:bg-gray-800 rounded-lg text-center">
                 <div className="flex-shrink-0">
                   {achievement.icon}
                 </div>
@@ -87,9 +104,9 @@ const Credibility: React.FC = () => {
                   <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
                     {achievement.title}
                   </h4>
-                  <p className="text-gray-600 dark:text-gray-300">
+                  <div className="text-gray-600 dark:text-gray-300">
                     {achievement.description}
-                  </p>
+                  </div>
                 </div>
               </div>
             ))}
