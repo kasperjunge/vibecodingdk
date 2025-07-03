@@ -20,7 +20,7 @@ Building a professional personal website for Kasper Junge, Lead AI Engineer, to 
 
 ### 1. Hero Section
 - **Headline**: Kasper Junge - Lead AI Engineer & Workshop Facilitator
-- **Value Proposition**: "Hjælper udviklerteams med at mestre AI-værktøjer i deres daglige arbejde"
+- **Value Proposition**: "Hjælper udviklerteams med at komme i gang med agent-baseret softwareudvikling"
 - **Portrait**: Professional photo from `/frontend/src/assets/kasperjunge.jpg`
 - **Primary CTA**: Button to workshop section
 

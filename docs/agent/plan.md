@@ -29,7 +29,7 @@ Create a modern, professional single-page React website for Kasper Junge to esta
 #### 2.1 Hero Section
 - **Professional portrait** (use existing `/frontend/src/assets/kasperjunge.jpg`)
 - **Headline**: "Kasper Junge - Lead AI Engineer & Workshop Facilitator"
-- **Value proposition**: "Hjælper udviklerteams med at mestre AI-værktøjer i deres daglige arbejde"
+- **Value proposition**: "Hjælper udviklerteams med at komme i gang med agent-baseret softwareudvikling"
 - **Primary CTA button** scrolling to workshop section
 - **Modern gradient background** or professional imagery
 
