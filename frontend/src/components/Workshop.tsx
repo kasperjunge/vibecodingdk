@@ -1,20 +1,8 @@
 import React from 'react'
 import { Button } from './ui/Button'
-import { Check, Calendar, Users, Clock, Star, ArrowRight } from 'lucide-react'
+import { Check, ArrowRight } from 'lucide-react'
 
 const Workshop: React.FC = () => {
-  const workshopFeatures = [
-    "Hands-on øvelser med jeres egen kode",
-    "Avancerede prompt engineering teknikker",
-    "Automatisering af repetitive tasks",
-    "Integration med populære IDE'er",
-    "Code review og debugging med AI",
-    "Refactoring og optimeringsteknikker",
-    "Best practices for AI-assisteret udvikling",
-    "Sikkerhed og etik i AI-værktøjer",
-    "Team workflows og samarbejdsstrategier",
-    "Måling og optimering af AI-produktivitet"
-  ]
 
   const dayStructure = [
     {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Award, Users, Mic, Star, GitBranch, Newspaper, Video, Radio } from 'lucide-react'
+import { Award, Users, Mic, Star, GitBranch, Radio } from 'lucide-react'
 
 const Credibility: React.FC = () => {
   const achievements = [
@@ -34,27 +34,6 @@ const Credibility: React.FC = () => {
           </a>
         </span>
       )
-    }
-  ]
-
-  const mediaStats = [
-    {
-      icon: <Radio className="w-8 h-8 text-blue-600" />,
-      count: "15+",
-      label: "Podcasts",
-      description: "Gæst på førende tech-podcasts"
-    },
-    {
-      icon: <Newspaper className="w-8 h-8 text-green-600" />,
-      count: "10+",
-      label: "Artikler",
-      description: "Omtalt i Computerworld, Finans.dk m.fl."
-    },
-    {
-      icon: <Video className="w-8 h-8 text-purple-600" />,
-      count: "5+",
-      label: "Konferencer",
-      description: "Foredrag og keynotes"
     }
   ]
 
