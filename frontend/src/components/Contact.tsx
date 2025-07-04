@@ -63,10 +63,10 @@ const Contact: React.FC = () => {
       <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center mb-20">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Skal vi tage en snak?
+            Klar til at komme i gang?
           </h2>
           <p className="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Interesseret i en workshop eller har spørgsmål? Jeg svarer typisk inden for 24 timer.
+            Interesseret i vores workshop eller har spørgsmål? Vi svarer typisk inden for 24 timer.
           </p>
         </div>
 
@@ -81,7 +81,7 @@ const Contact: React.FC = () => {
               {submitStatus === 'success' && (
                 <div className="bg-green-50 dark:bg-green-900/30 border-2 border-green-200 dark:border-green-700 rounded-2xl p-6 mb-8">
                   <p className="text-green-800 dark:text-green-200 text-lg">
-                    Tak for din besked! Jeg vender tilbage til dig inden for 24 timer.
+                    Tak for din besked! Vi vender tilbage til dig inden for 24 timer.
                   </p>
                 </div>
               )}
@@ -89,7 +89,7 @@ const Contact: React.FC = () => {
               {submitStatus === 'error' && (
                 <div className="bg-red-50 dark:bg-red-900/30 border-2 border-red-200 dark:border-red-700 rounded-2xl p-6 mb-8">
                   <p className="text-red-800 dark:text-red-200 text-lg">
-                    Der skete en fejl. Prøv igen eller kontakt mig direkte på email.
+                    Der skete en fejl. Prøv igen eller kontakt os direkte på email.
                   </p>
                 </div>
               )}
@@ -169,7 +169,7 @@ const Contact: React.FC = () => {
                     rows={6}
                     value={formData.message}
                     onChange={handleInputChange}
-                    placeholder="Fortæl mig om jeres team, udfordringer, og hvad I håber at opnå..."
+                    placeholder="Fortæl os om jeres team, udfordringer, og hvad I håber at opnå med workshoppen..."
                     className="w-full px-6 py-4 text-lg border-2 border-gray-200 dark:border-gray-600 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white resize-vertical transition-all duration-200 hover:border-gray-300 dark:hover:border-gray-500"
                   />
                 </div>
@@ -231,7 +231,7 @@ const Contact: React.FC = () => {
               </div>
 
               <div className="space-y-6">
-                <h4 className="text-2xl font-bold text-gray-900 dark:text-white">Følg mig</h4>
+                <h4 className="text-2xl font-bold text-gray-900 dark:text-white">Følg facilitatorerne</h4>
                 <div className="flex flex-col gap-4">
                   <a
                     href="https://www.linkedin.com/in/kasper-juunge/"
@@ -240,7 +240,16 @@ const Contact: React.FC = () => {
                     className="flex items-center gap-4 px-6 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-2xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                   >
                     <Linkedin className="w-6 h-6" />
-                    <span className="text-lg font-medium">LinkedIn</span>
+                    <span className="text-lg font-medium">Kasper på LinkedIn</span>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/cbechn/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-4 px-6 py-4 bg-gradient-to-r from-purple-600 to-purple-700 text-white rounded-2xl hover:from-purple-700 hover:to-purple-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                  >
+                    <Linkedin className="w-6 h-6" />
+                    <span className="text-lg font-medium">Christian på LinkedIn</span>
                   </a>
                   <a
                     href="https://podcasts.apple.com/dk/podcast/verbos-ai-og-softwareudvikling/id1650151292"
@@ -265,13 +274,16 @@ const Contact: React.FC = () => {
                 </div>
               </div>
 
-              <div className="p-8 bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 dark:from-blue-900/20 dark:via-purple-900/20 dark:to-indigo-900/20 rounded-3xl shadow-lg">
+                              <div className="p-8 bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 dark:from-blue-900/20 dark:via-purple-900/20 dark:to-indigo-900/20 rounded-3xl shadow-lg">
                 <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                  Response tid
+                  Workshop facilitatorer
                 </h4>
+                <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-4">
+                  Kasper Junge håndterer alle henvendelser og koordinerer workshoppen sammen med Christian Bech Nørhave.
+                </p>
                 <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
-                  Jeg svarer typisk inden for <strong className="text-blue-600 dark:text-blue-400">24 timer</strong> på arbejdsdage. 
-                  For akutte forespørgsler, kontakt mig venligst på LinkedIn.
+                  Vi svarer typisk inden for <strong className="text-blue-600 dark:text-blue-400">24 timer</strong> på arbejdsdage. 
+                  For akutte forespørgsler, kontakt venligst Kasper på LinkedIn.
                 </p>
               </div>
             </div>
