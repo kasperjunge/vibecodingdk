@@ -101,7 +101,7 @@ const Credibility: React.FC = () => {
       <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center mb-20">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Hvorfor stole på vores workshop?
+            Hvorfor vælge vores workshop?
           </h2>
           <p className="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
             Faciliteret af Danmarks mest erfarne AI-praktikere med dokumenterede resultater og brancheanerkendelse

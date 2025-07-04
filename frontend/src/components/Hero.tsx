@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from './ui/Button'
-import { ArrowDown, Code, Zap, Users } from 'lucide-react'
+import { ArrowDown, Code, Zap, Users, Linkedin, Mic } from 'lucide-react'
 import kasperImage from '../assets/kasperjunge.jpg'
 import christianImage from '../assets/christianbechnørhave.png'
 
@@ -11,6 +11,13 @@ const Hero: React.FC = () => {
       workshopSection.scrollIntoView({ behavior: 'smooth' })
     }
   }
+
+  // YouTube icon component
+  const YouTubeIcon = ({ className }: { className?: string }) => (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+    </svg>
+  )
 
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-700">
@@ -75,6 +82,36 @@ const Hero: React.FC = () => {
                     formand for Danish Data Science Community og vært på Verbos Podcast.
                   </p>
                 </div>
+                {/* Social Media Links - Kasper */}
+                <div className="flex gap-3 mt-4">
+                  <a
+                    href="https://www.linkedin.com/in/kasper-juunge/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-110 shadow-md hover:shadow-lg"
+                    title="Kasper på LinkedIn"
+                  >
+                    <Linkedin className="w-4 h-4" />
+                  </a>
+                  <a
+                    href="https://podcasts.apple.com/dk/podcast/verbos-ai-og-softwareudvikling/id1650151292"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-all duration-300 transform hover:scale-110 shadow-md hover:shadow-lg"
+                    title="Verbos Podcast"
+                  >
+                    <Mic className="w-4 h-4" />
+                  </a>
+                  <a
+                    href="https://www.youtube.com/channel/UCB1Cg40cN77lhbKBColnbCA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 bg-red-600 text-white rounded-full hover:bg-red-700 transition-all duration-300 transform hover:scale-110 shadow-md hover:shadow-lg"
+                    title="YouTube"
+                  >
+                    <YouTubeIcon className="w-4 h-4" />
+                  </a>
+                </div>
               </div>
 
               {/* Christian Bech Nørhave */}
@@ -99,6 +136,18 @@ const Hero: React.FC = () => {
                     Tidligere chefkonsulent for AI i Dansk Erhverv, nu CEO i Just Trust IT ApS.
                   </p>
                 </div>
+                {/* Social Media Links - Christian */}
+                <div className="flex gap-3 mt-4">
+                  <a
+                    href="https://www.linkedin.com/in/cbechn/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-110 shadow-md hover:shadow-lg"
+                    title="Christian på LinkedIn"
+                  >
+                    <Linkedin className="w-4 h-4" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -122,14 +171,6 @@ const Hero: React.FC = () => {
               Book gratis konsultation
             </Button>
           </div>
-        </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="flex flex-col items-center gap-2">
-          <span className="text-sm text-gray-500 dark:text-gray-400 font-medium">Scroll ned</span>
-          <ArrowDown className="w-6 h-6 text-gray-500 dark:text-gray-400" />
         </div>
       </div>
     </section>
