@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { Button } from './ui/Button'
-import { Mail, MapPin, Send } from 'lucide-react'
+import { Send } from 'lucide-react'
 import { apiCall } from '../config/api'
+import kasperImage from '../assets/kasperjunge.jpg'
+import christianImage from '../assets/christianbechnørhave.png'
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -195,26 +197,53 @@ const Contact: React.FC = () => {
             {/* Contact Information */}
             <div className="space-y-12">
               <div>
-                <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-                  Kontakt information
+                <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
+                  Mød holdet bag workshoppen
                 </h4>
-                <div className="space-y-4">
-                  <div className="flex items-center gap-4">
-                    <div className="p-2 bg-blue-100 dark:bg-blue-900/30 rounded-full">
-                      <Mail className="w-5 h-5 text-blue-600" />
+                <div className="space-y-8">
+                  {/* Kasper Junge */}
+                  <div className="flex items-start gap-6">
+                    <div className="flex-shrink-0">
+                      <img 
+                        src={kasperImage} 
+                        alt="Kasper Junge" 
+                        className="w-20 h-20 rounded-full object-cover shadow-lg"
+                      />
                     </div>
-                    <span className="text-gray-600 dark:text-gray-300 text-lg">
-                      Kontakt os via formularen eller book direkte et møde
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <div className="p-2 bg-green-100 dark:bg-green-900/30 rounded-full">
-                      <MapPin className="w-5 h-5 text-green-600" />
+                    <div>
+                      <h5 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                        Kasper Junge
+                      </h5>
+                      <p className="text-gray-600 dark:text-gray-300 text-base leading-relaxed">
+                        AI-ekspert og grundlægger. Kasper har hjulpet hundredvis af virksomheder med at implementere AI-løsninger og optimere deres processer.
+                      </p>
                     </div>
-                    <span className="text-gray-600 dark:text-gray-300 text-lg">
-                      Workshop kan afholdes på din lokation eller online
-                    </span>
                   </div>
+
+                  {/* Christian Bech Nørhave */}
+                  <div className="flex items-start gap-6">
+                    <div className="flex-shrink-0">
+                      <img 
+                        src={christianImage} 
+                        alt="Christian Bech Nørhave" 
+                        className="w-20 h-20 rounded-full object-cover shadow-lg"
+                      />
+                    </div>
+                    <div>
+                      <h5 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                        Christian Bech Nørhave
+                      </h5>
+                      <p className="text-gray-600 dark:text-gray-300 text-base leading-relaxed">
+                        Teknisk lead og implementeringsekspert. Christian sikrer at jeres team får praktisk erfaring med AI-værktøjer og -processer.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-8 p-6 bg-blue-50 dark:bg-blue-900/20 rounded-2xl">
+                  <p className="text-blue-800 dark:text-blue-200 text-lg font-medium text-center">
+                    Vi svarer personligt på alle henvendelser inden for 24 timer
+                  </p>
                 </div>
               </div>
             </div>
