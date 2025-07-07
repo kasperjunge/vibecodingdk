@@ -41,26 +41,25 @@ const Hero: React.FC = () => {
               </div>
             </div>
             
-            <h1 className="text-6xl lg:text-8xl font-extrabold text-gray-900 dark:text-white leading-none text-shadow-lg">
-              Agent-baseret<br />
+            <h1 className="text-8xl lg:text-8xl font-extrabold text-gray-900 dark:text-white leading-none text-shadow-lg">
               <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-                Softwareudvikling
+                Vibe Coding
               </span>
             </h1>
             
             <h2 className="text-3xl lg:text-4xl text-gray-700 dark:text-gray-200 font-semibold max-w-5xl mx-auto leading-tight">
-              Workshoppen der gør dit udviklerteam klar til en fremtid med AI-agenter
+              Det er ikke en mulighed - det er en realitet.
             </h2>
             
             <p className="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed font-medium">
-              Lær at mestre AI-værktøjer, implementere dem effektivt og øg dit teams produktivitet og arbejdsglæde markant - på bare 2 dage
+              Spørgsmålet er ikke, om dit team bruger det, men om de gør det sammen. Vores workshop sikrer et fælles fundament, så I kan rykke hurtigt – som ét team.
             </p>
           </div>
 
           {/* Facilitators */}
           <div className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-3xl shadow-2xl p-12 lg:p-16 max-w-7xl mx-auto border border-white/20 dark:border-gray-700/50 animate-scaleIn">
             <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-shadow-md">
-              Faciliteret af Danmarks førende AI-eksperter
+              Faciliteret af anerkendte AI-eksperter
             </h3>
             
             <div className="grid md:grid-cols-2 gap-16 lg:gap-20">
@@ -83,7 +82,7 @@ const Hero: React.FC = () => {
                     Lead AI Engineer, Dinero
                   </p>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg max-w-md">
-                    Prisvindende AI-ingeniør og community-builder. Nordic DAIR-prismodtager 2023, 
+                    Prisvindende AI-ingeniør og community-builder. Nordic AI Influencer DAIR-prismodtager 2023, 
                     formand for Danish Data Science Community og vært på Verbos Podcast.
                   </p>
                 </div>
@@ -139,7 +138,7 @@ const Hero: React.FC = () => {
                   </p>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg max-w-md">
                     Dansk futurist og digitaliseringsrådgiver med 20+ års erfaring. 
-                    Tidligere chefkonsulent for AI i Dansk Erhverv, nu CEO i Just Trust IT ApS.
+                    Tidligere chefkonsulent for AI i Dansk Erhverv, på vej med noget stort.
                   </p>
                 </div>
                 {/* Social Media Links - Christian */}

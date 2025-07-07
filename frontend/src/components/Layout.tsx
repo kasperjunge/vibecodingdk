@@ -22,7 +22,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 © 2024 Kasper Junge. Alle rettigheder forbeholdes.
               </p>
               <p className="text-gray-400 text-lg lg:text-xl">
-                Lead AI Engineer & Workshop Facilitator
+                Lead AI Engineer & Vibe Coding Workshop Facilitator
               </p>
             </div>
           </div>

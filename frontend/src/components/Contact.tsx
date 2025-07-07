@@ -215,7 +215,7 @@ const Contact: React.FC = () => {
                         Kasper Junge
                       </h5>
                       <p className="text-gray-600 dark:text-gray-300 text-base leading-relaxed">
-                        AI-ekspert og grundlægger. Kasper har hjulpet hundredvis af virksomheder med at implementere AI-løsninger og optimere deres processer.
+                        Danmarks førende AI-influencer og AI Engineer community bygger.
                       </p>
                     </div>
                   </div>
@@ -234,7 +234,7 @@ const Contact: React.FC = () => {
                         Christian Bech Nørhave
                       </h5>
                       <p className="text-gray-600 dark:text-gray-300 text-base leading-relaxed">
-                        Teknisk lead og implementeringsekspert. Christian sikrer at jeres team får praktisk erfaring med AI-værktøjer og -processer.
+                        Futurist og digitaliseringsrådgiver med 20+ års erfaring i at omsætte AI-hype til konkrete resultater.
                       </p>
                     </div>
                   </div>

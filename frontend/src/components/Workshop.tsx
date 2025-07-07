@@ -11,7 +11,7 @@ const Workshop: React.FC = () => {
       topics: [
         "Introduktion til agent-baseret softwareudvikling",
         "Opsætning og konfiguration af AI-værktøjer",
-        "Grundlæggende prompt engineering og best practices",
+        "Grundlæggende teknikker og principper",
         "Code generation og completion teknikker",
         "Anvendelse på greenfield kodebaser",
         "Debugging og fejlfinding med AI-assistenter",
@@ -22,12 +22,12 @@ const Workshop: React.FC = () => {
       day: "Dag 2", 
       title: "Anvendelse på intern kodebase",
       topics: [
-        "Avanceret prompt engineering for eksisterende kode",
-        "Analyse og forståelse af jeres interne kodebase",
+        "Praktisk anvendelse af på eksisterende kodebase",
         "Refactoring og modernisering med AI-værktøjer",
         "Integration med eksisterende udviklings-workflows",
         "Begrænsninger og udfordringer ved legacy kode",
         "Muligheder for graduel implementering",
+        "Analyse og forståelse af jeres interne kodebase",
         "Fælles diskussion om jeres specifikke setup"
       ]
     }
@@ -38,7 +38,7 @@ const Workshop: React.FC = () => {
       <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center mb-20">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Agent-baseret Softwareudvikling Workshop
+            Vibe Coding Workshop
           </h2>
           <p className="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
             En intensiv, praktisk workshop designet til udviklerteams, der vil mestre AI-værktøjer og implementere dem effektivt i deres daglige arbejde
@@ -83,7 +83,7 @@ const Workshop: React.FC = () => {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 dark:bg-blue-900/30 rounded-full">
               <span className="text-blue-800 dark:text-blue-200 font-medium">
-                🚀 Opstartspriser - Priserne justeres løbende op mod fuld pris
+                🚀 Kun de første 3 workshops til denne pris - Derefter fuld pris
               </span>
             </div>
           </div>
@@ -232,7 +232,7 @@ const Workshop: React.FC = () => {
               Faciliteret af Danmarks førende AI-eksperter
             </h3>
             <p className="text-xl mb-8 opacity-90">
-              Kasper Junge (Lead AI Engineer, Dinero) & Christian Bech Nørhave (CEO, Just Trust IT ApS) 
+              Kasper Junge (Lead AI Engineer, Dinero) & Christian Bech Nørhave (på vej med noget stort) 
               bringer sammen deres tekniske ekspertise og strategiske forretningsforståelse
             </p>
             <Button 

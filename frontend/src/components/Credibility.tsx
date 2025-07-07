@@ -33,7 +33,7 @@ const Credibility: React.FC = () => {
     },
     {
       icon: <Briefcase className="w-8 h-8 text-purple-600" />,
-      title: "CEO i Just Trust IT ApS",
+      title: "På vej med noget stort",
       description: "Uafhængig digitaliseringsrådgiver med fokus på AI og forretningsudvikling"
     },
     {
@@ -104,7 +104,7 @@ const Credibility: React.FC = () => {
             Hvorfor vælge vores workshop?
           </h2>
           <p className="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            Faciliteret af Danmarks mest erfarne AI-praktikere med dokumenterede resultater og brancheanerkendelse
+            Faciliteret af erfarne AI-praktikere med stærk brancheanerkendelse og solid formidlingsevne
           </p>
         </div>
 
@@ -135,7 +135,7 @@ const Credibility: React.FC = () => {
         {/* Facilitators Section */}
         <div className="mb-24">
           <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-            Facilitatorernes baggrund
+            Vores baggrund
           </h3>
           
           <div className="grid lg:grid-cols-2 gap-16 max-w-7xl mx-auto">
