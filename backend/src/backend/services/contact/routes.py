@@ -1,15 +1,21 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Request
+from slowapi import Limiter
+from slowapi.util import get_remote_address
 from backend.services.contact.schemas import ContactFormRequest, ContactFormResponse
 from backend.services.contact.service import contact_service
+from backend.utils import get_rate_limit
 import logging
 
 logger = logging.getLogger(__name__)
 
 router = APIRouter()
 
+# Create limiter instance
+limiter = Limiter(key_func=get_remote_address)
 
 @router.post("/contact", response_model=ContactFormResponse)
-async def submit_contact_form(contact_data: ContactFormRequest):
+@limiter.limit(get_rate_limit("contact"))  # Use centralized rate limit config
+async def submit_contact_form(request: Request, contact_data: ContactFormRequest):
     """Submit contact form and send to Slack"""
     try:
         success = await contact_service.submit_contact_form(contact_data)

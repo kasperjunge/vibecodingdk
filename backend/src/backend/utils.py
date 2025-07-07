@@ -130,4 +130,25 @@ def dump_openapi_schema_and_summary(app) -> None:
         print(f"✅ API summary generated: {summary_path}")
         
     except Exception as e:
-        print(f"❌ Failed to dump OpenAPI schema: {e}") 
+        print(f"❌ Failed to dump OpenAPI schema: {e}")
+
+
+# Rate limiting utilities
+def get_rate_limit_key(request):
+    """Get rate limit key based on IP address and user agent for better spam detection"""
+    client_ip = request.client.host
+    user_agent = request.headers.get("user-agent", "")
+    # Use IP + first 50 chars of user agent for more specific rate limiting
+    return f"{client_ip}:{user_agent[:50]}"
+
+# Common rate limit configurations
+RATE_LIMITS = {
+    "contact": "5/minute",      # Contact form: 5 requests per minute
+    "auth": "10/minute",        # Authentication: 10 requests per minute  
+    "general": "60/minute",     # General API: 60 requests per minute
+    "strict": "1/minute",       # Very strict: 1 request per minute
+}
+
+def get_rate_limit(limit_type: str = "general") -> str:
+    """Get rate limit string for a specific type"""
+    return RATE_LIMITS.get(limit_type, RATE_LIMITS["general"]) 
