@@ -138,7 +138,7 @@ const Workshop: React.FC = () => {
                 <div className="mb-6">
                   <div className="flex items-center justify-center gap-3 mb-2">
                     <span className="text-2xl text-gray-400 dark:text-gray-500 line-through">35.000</span>
-                    <span className="text-5xl font-bold text-gray-900 dark:text-white">25.000</span>
+                    <span className="text-5xl font-bold text-gray-900 dark:text-white">30.000</span>
                   </div>
                   <span className="text-xl text-gray-500 dark:text-gray-400">DKK</span>
                 </div>
@@ -189,7 +189,7 @@ const Workshop: React.FC = () => {
                 <div className="mb-6">
                   <div className="flex items-center justify-center gap-3 mb-2">
                     <span className="text-2xl text-gray-400 dark:text-gray-500 line-through">70.000</span>
-                    <span className="text-5xl font-bold text-gray-900 dark:text-white">30.000</span>
+                    <span className="text-5xl font-bold text-gray-900 dark:text-white">35.000</span>
                   </div>
                   <span className="text-xl text-gray-500 dark:text-gray-400">DKK</span>
                 </div>

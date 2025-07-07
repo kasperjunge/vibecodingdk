@@ -64,7 +64,7 @@ Intensive 1-2 day on-site workshop helping development teams master AI-powered c
 - **Format**: On-site only
 - **Group Size**: Ideal 15 participants, maximum 20
 - **Duration**: 1-2 days based on needs
-- **Early Bird Pricing**: 30,000 DKK (40% discount - regular price will be 75,000 DKK)
+- **Early Bird Pricing**: 35.000 DKK (40% discount - regular price will be 75,000 DKK)
 - **Unique Value**: Led by practitioner with real-world experience at scale
 
 ### 4. Contact Section

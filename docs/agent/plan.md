@@ -55,7 +55,7 @@ Create a modern, professional single-page React website for Kasper Junge to esta
   - Format: On-site only
   - Group size: 15 ideal, 20 maximum
   - Duration: 1-2 days
-  - **Early bird pricing**: 30,000 DKK (highlighted discount from 75,000 DKK)
+  - **Early bird pricing**: 35.000 DKK (highlighted discount from 75,000 DKK)
 - **Strong CTA** to contact form
 
 #### 2.4 Contact Section

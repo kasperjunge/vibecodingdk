@@ -75,7 +75,7 @@ frontend/src/
 
 ### 3. Workshop Section
 - **Comprehensive Details**: 2-day structure breakdown
-- **Clear Pricing**: Early bird special (30,000 DKK vs 75,000 DKK)
+- **Clear Pricing**: Early bird special (35.000 DKK vs 75,000 DKK)
 - **ROI Metrics**: Productivity improvements and success stats
 - **Flexible Format**: 1-2 days, on-site only in Denmark
 
