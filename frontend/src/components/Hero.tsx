@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
             </h1>
             
             <h2 className="text-3xl lg:text-4xl text-gray-700 dark:text-gray-200 font-semibold max-w-5xl mx-auto leading-tight">
-              Det er ikke kun sjov og spas - det er fremtiden.
+              Det er ikke fremtiden - det er nu. 
             </h2>
             
             <p className="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed font-medium">
