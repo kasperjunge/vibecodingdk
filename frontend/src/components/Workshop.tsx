@@ -41,7 +41,7 @@ const Workshop: React.FC = () => {
             Vibe Coding Workshop
           </h2>
           <p className="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            En intensiv, praktisk workshop designet til udviklerteams, der vil mestre AI-værktøjer og implementere dem effektivt i deres daglige arbejde
+            Spørgsmålet er ikke, om dit team bruger Vibe Coding, men om de gør det sammen. Vores workshop sikrer et fælles fundament, så I kan rykke hurtigt – som ét team.
           </p>
         </div>
 

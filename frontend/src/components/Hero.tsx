@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
             </h2>
             
             <p className="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed font-medium">
-              Spørgsmålet er ikke, om dit team bruger det, men om de gør det sammen. Vores workshop sikrer et fælles fundament, så I kan rykke hurtigt – som ét team.
+              En intensiv, praktisk workshop designet til udviklerteams, der vil mestre AI-værktøjer og implementere dem effektivt i deres daglige arbejde.
             </p>
           </div>
 
