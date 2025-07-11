@@ -80,13 +80,6 @@ const Workshop: React.FC = () => {
           <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center">
             Priser
           </h3>
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 dark:bg-blue-900/30 rounded-full">
-              <span className="text-blue-800 dark:text-blue-200 font-medium">
-                🚀 Kun de første 3 workshops til denne pris - Derefter fuld pris
-              </span>
-            </div>
-          </div>
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Free Consultation */}
             <div className="relative p-8 bg-white dark:bg-gray-900 rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
@@ -136,11 +129,8 @@ const Workshop: React.FC = () => {
                   1 Dags Workshop
                 </h4>
                 <div className="mb-6">
-                  <div className="flex items-center justify-center gap-3 mb-2">
-                    <span className="text-2xl text-gray-400 dark:text-gray-500 line-through">35.000</span>
-                    <span className="text-5xl font-bold text-gray-900 dark:text-white">30.000</span>
-                  </div>
-                  <span className="text-xl text-gray-500 dark:text-gray-400">DKK</span>
+                  <span className="text-5xl font-bold text-gray-900 dark:text-white">40.000</span>
+                  <span className="text-xl text-gray-500 dark:text-gray-400 block">DKK</span>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 mb-8 text-lg">
                   Grundlæggende teknikker for greenfield kodebaser
@@ -187,11 +177,8 @@ const Workshop: React.FC = () => {
                   2 Dages Workshop
                 </h4>
                 <div className="mb-6">
-                  <div className="flex items-center justify-center gap-3 mb-2">
-                    <span className="text-2xl text-gray-400 dark:text-gray-500 line-through">70.000</span>
-                    <span className="text-5xl font-bold text-gray-900 dark:text-white">35.000</span>
-                  </div>
-                  <span className="text-xl text-gray-500 dark:text-gray-400">DKK</span>
+                  <span className="text-5xl font-bold text-gray-900 dark:text-white">70.000</span>
+                  <span className="text-xl text-gray-500 dark:text-gray-400 block">DKK</span>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 mb-8 text-lg">
                   Komplet workshop + anvendelse på intern kodebase
