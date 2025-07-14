@@ -27,7 +27,7 @@ class ContactService:
         emoji = inquiry_type_emoji.get(contact_data.inquiry_type, "💬")
         
         slack_message = {
-            "text": f"Ny kontaktformular besked fra kasperjunge.com",
+            "text": f"Ny kontaktformular besked fra vibe-coding.dk",
             "blocks": [
                 {
                     "type": "header",
@@ -69,7 +69,7 @@ class ContactService:
                     "elements": [
                         {
                             "type": "mrkdwn",
-                            "text": f"Sendt fra kasperjunge.com kontaktformular"
+                            "text": f"Sendt fra vibe-coding.dk kontaktformular"
                         }
                     ]
                 }

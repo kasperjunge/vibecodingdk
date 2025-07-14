@@ -1,6 +1,6 @@
-# Kasper Junge Personal Website
+# Vibe Coding Website
 
-A modern, professional single-page React website showcasing Kasper Junge's expertise in AI development and promoting his Modern AI Development Workshop to Danish tech leaders.
+A modern, professional single-page React website for Vibe Coding, showcasing AI development workshops facilitated by Kasper Junge and promoting the Modern AI Development Workshop to Danish tech leaders.
 
 ## 🚀 Features
 
@@ -197,7 +197,7 @@ Ready for analytics integration:
 ## 📞 Contact
 
 For questions about this website implementation:
-- **Email**: kasper@kasperjunge.com
+- **Email**: kasper@vibe-coding.dk
 - **LinkedIn**: [kasperjunge](https://linkedin.com/in/kasperjunge)
 - **Podcast**: [Verbos](https://verbos.dk)
 
