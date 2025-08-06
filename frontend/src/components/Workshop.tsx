@@ -7,28 +7,22 @@ const Workshop: React.FC = () => {
   const dayStructure = [
     {
       day: "Dag 1",
-      title: "Grundlæggende teknikker og principper",
+      title: "Spec-Driven Development",
       topics: [
-        "Introduktion til agent-baseret softwareudvikling",
-        "Opsætning og konfiguration af AI-værktøjer",
-        "Grundlæggende teknikker og principper",
-        "Code generation og completion teknikker",
-        "Anvendelse på greenfield kodebaser",
-        "Debugging og fejlfinding med AI-assistenter",
-        "Hands-on øvelser med nye projekter"
+        { icon: "🎯", text: "Skab fælles fundament for softwareudvikling med AI" },
+        { icon: "🛠️", text: "Hands-on erfaring med AI-agent udvikling" },
+        { icon: "📋", text: "Lær at strukturere udviklingsopgaver for AI-agenter" },
+        { icon: "🏠", text: "Praktisk erfaring teamet kan tage med hjem samme dag" }
       ]
     },
     {
       day: "Dag 2", 
-      title: "Anvendelse på intern kodebase",
+      title: "Context Engineering",
       topics: [
-        "Praktisk anvendelse af på eksisterende kodebase",
-        "Refactoring og modernisering med AI-værktøjer",
-        "Integration med eksisterende udviklings-workflows",
-        "Begrænsninger og udfordringer ved legacy kode",
-        "Muligheder for graduel implementering",
-        "Analyse og forståelse af jeres interne kodebase",
-        "Fælles diskussion om jeres specifikke setup"
+        { icon: "🧠", text: "Lær grundlæggende Context Engineering principper" },
+        { icon: "⚡", text: "Systematisk performance optimering af jeres AI-agent" },
+        { icon: "🎯", text: "Praktiske teknikker til forbedring af kontekst" },
+        { icon: "📈", text: "Opdag konkrete tiltag forbedre AI-agenter i jeres kontekst" },
       ]
     }
   ]
@@ -48,7 +42,7 @@ const Workshop: React.FC = () => {
         {/* Day Structure */}
         <div className="max-w-7xl mx-auto mb-24">
           <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-            Workshop Program
+            Workshop Dage
           </h3>
           <div className="grid lg:grid-cols-2 gap-8">
             {dayStructure.map((day, index) => (
@@ -65,8 +59,8 @@ const Workshop: React.FC = () => {
                 <ul className="space-y-4">
                   {day.topics.map((topic, topicIndex) => (
                     <li key={topicIndex} className="flex items-start gap-4">
-                      <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-600 dark:text-gray-300 text-lg">{topic}</span>
+                      <span className="text-2xl flex-shrink-0 mt-0.5">{topic.icon}</span>
+                      <span className="text-gray-600 dark:text-gray-300 text-lg">{topic.text}</span>
                     </li>
                   ))}
                 </ul>
@@ -133,24 +127,24 @@ const Workshop: React.FC = () => {
                   <span className="text-xl text-gray-500 dark:text-gray-400 block">DKK</span>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 mb-8 text-lg">
-                  Grundlæggende teknikker for greenfield kodebaser
+                  Introduktion til Vibe Coding og Spec-Driven Development
                 </p>
                 <ul className="space-y-4 mb-10 text-left">
                   <li className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-600 dark:text-gray-300">1 dag intensiv training</span>
+                    <span className="text-gray-600 dark:text-gray-300">Fælles fundament for udvikling med AI-agenter</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-600 dark:text-gray-300">Fokus på nye projekter</span>
+                    <span className="text-gray-600 dark:text-gray-300">Introduktion til Vibe Coding og use-cases</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-600 dark:text-gray-300">Op til 20 deltagere</span>
+                    <span className="text-gray-600 dark:text-gray-300">Hands-on erfaring med AI-agenter</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-600 dark:text-gray-300">Materialer og værktøjer</span>
+                    <span className="text-gray-600 dark:text-gray-300">Lær at strukturere udviklingsopgaver for AI-agenter</span>
                   </li>
                 </ul>
                 <Button 
@@ -181,24 +175,24 @@ const Workshop: React.FC = () => {
                   <span className="text-xl text-gray-500 dark:text-gray-400 block">DKK</span>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 mb-8 text-lg">
-                  Komplet workshop + anvendelse på intern kodebase
+                  Context Engineering og AI-agent udvikling i jeres kontekst
                 </p>
                 <ul className="space-y-4 mb-10 text-left">
                   <li className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-600 dark:text-gray-300">Alt fra 1 dags workshop</span>
+                    <span className="text-gray-600 dark:text-gray-300">Alt fra Dag 1 workshop</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-600 dark:text-gray-300">Anvendelse på jeres kodebase</span>
+                    <span className="text-gray-600 dark:text-gray-300">Context Engineering principper</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-600 dark:text-gray-300">Diskussion om begrænsninger</span>
+                    <span className="text-gray-600 dark:text-gray-300">Metodisk optimering af AI-agenter</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-600 dark:text-gray-300">Implementeringsplan</span>
+                    <span className="text-gray-600 dark:text-gray-300">AI-agent udvikling i jeres kontekst</span>
                   </li>
                 </ul>
                 <Button 
