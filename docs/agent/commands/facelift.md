@@ -1,1 +1,0 @@
-Keep content the same, but improve spacing, visual hierarchy, and make it feel premium.

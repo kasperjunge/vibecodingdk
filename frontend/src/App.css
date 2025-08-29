@@ -1,28 +1,42 @@
-/* App-specific styles - most styling is handled by Tailwind CSS */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
 
-/* Custom animations that might be needed */
-@keyframes fadeIn {
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
   from {
-    opacity: 0;
-    transform: translateY(20px);
+    transform: rotate(0deg);
   }
   to {
-    opacity: 1;
-    transform: translateY(0);
+    transform: rotate(360deg);
   }
 }
 
-.fade-in {
-  animation: fadeIn 0.6s ease-out;
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
 }
 
-/* Smooth scroll behavior for anchor links */
-html {
-  scroll-behavior: smooth;
+.card {
+  padding: 2em;
 }
 
-/* Ensure images are responsive by default */
-img {
-  max-width: 100%;
-  height: auto;
+.read-the-docs {
+  color: #888;
 }
