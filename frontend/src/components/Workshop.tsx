@@ -123,7 +123,7 @@ const Workshop: React.FC = () => {
                   1 Dags Workshop
                 </h4>
                 <div className="mb-6">
-                  <span className="text-5xl font-bold text-gray-900 dark:text-white">40.000</span>
+                  <span className="text-5xl font-bold text-gray-900 dark:text-white">35.000</span>
                   <span className="text-xl text-gray-500 dark:text-gray-400 block">DKK</span>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 mb-8 text-lg">
@@ -171,7 +171,7 @@ const Workshop: React.FC = () => {
                   2 Dages Workshop
                 </h4>
                 <div className="mb-6">
-                  <span className="text-5xl font-bold text-gray-900 dark:text-white">70.000</span>
+                  <span className="text-5xl font-bold text-gray-900 dark:text-white">60.000</span>
                   <span className="text-xl text-gray-500 dark:text-gray-400 block">DKK</span>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 mb-8 text-lg">
