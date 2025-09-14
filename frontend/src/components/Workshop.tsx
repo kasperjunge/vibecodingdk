@@ -74,6 +74,7 @@ const Workshop: React.FC = () => {
           <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center">
             Priser
           </h3>
+          <p className="text-center text-sm text-gray-500 dark:text-gray-400 mb-8">Alle priser er ekskl. moms</p>
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Free Consultation */}
             <div className="relative p-8 bg-white dark:bg-gray-900 rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
