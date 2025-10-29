@@ -44,3 +44,7 @@ app.include_router(contact_router, prefix="/api", tags=["contact"])
 @app.get("/")
 async def root():
     return {"message": "Hello World"}
+
+@app.get("/health")
+async def health():
+    return {"status": "healthy"}
