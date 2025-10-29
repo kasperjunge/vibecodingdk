@@ -1,31 +1,50 @@
-# Use Python 3.10 with uv pre-installed as base image
-FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim
+# Multi-stage build for FastAPI backend
+FROM python:3.12-slim AS builder
+
+# Install uv for fast Python package management
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /bin/uv
 
 # Set working directory
 WORKDIR /app
 
-# Copy project files
-COPY pyproject.toml uv.lock ./
+# Copy dependency files and source code
+COPY pyproject.toml uv.lock README.md ./
+COPY src ./src
+COPY migrations ./migrations
+COPY alembic.ini ./
 
-# Install dependencies without installing the project itself
-# This creates a separate layer for dependencies which improves build caching
-RUN --mount=type=cache,target=/root/.cache/uv \
-    uv sync --locked --no-install-project
+# Create virtual environment and install dependencies
+RUN uv sync --frozen
 
-# Install postgresql-client
-RUN apt-get update && apt-get install -y postgresql-client && rm -rf /var/lib/apt/lists/*
+# Production stage
+FROM python:3.12-slim
 
-# Copy the rest of the application
+# Install curl for healthchecks
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set working directory
+WORKDIR /app
+
+# Copy virtual environment from builder
+COPY --from=builder /app/.venv /app/.venv
+
+# Set PATH to use virtual environment
+ENV PATH="/app/.venv/bin:$PATH"
+
+# Copy application code
 COPY . .
 
-# Set environment variables
-ENV PYTHONPATH=/app
+# Create directory for SQLite database (if used)
+RUN mkdir -p /app/data
 
-# Expose port 8000 for the FastAPI application
+# Expose port
 EXPOSE 8000
 
-# Compile bytecode for improved startup time
-ENV UV_COMPILE_BYTECODE=1
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
+    CMD curl -f http://localhost:8000/health || exit 1
 
-# Sync the project and run the backend
-CMD uv sync --locked && uv run backend
+# Run database migrations and start application
+CMD ["sh", "-c", "python -m alembic upgrade head && python -m backend.main"]
