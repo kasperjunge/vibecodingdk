@@ -102,9 +102,7 @@ services:
     depends_on:
       backend:
         condition: service_healthy
-    # Coolify needs this port published to route traffic to it
-    ports:
-      - "3000:80"
+    # Coolify handles port mapping through its proxy - no need to expose ports
     labels:
       - "coolify.managed=true"
     healthcheck:
