@@ -80,9 +80,10 @@ services:
       
       # Verification
       VERIFICATION_TOKEN_EXPIRE_HOURS: ${VERIFICATION_TOKEN_EXPIRE_HOURS:-24}
-    # Ports are not exposed to host in Coolify - internal communication only
-    # ports:
-    #   - "8000:8000"
+    # Expose port 8000 for internal container communication
+    # Note: Use 'expose' not 'ports' - this makes the port available to other containers
+    expose:
+      - "8000"
     volumes:
       - ./backend/data:/app/data
     healthcheck:
@@ -102,7 +103,10 @@ services:
     depends_on:
       backend:
         condition: service_healthy
-    # Coolify handles port mapping through its proxy - no need to expose ports
+    # Expose port 80 for Coolify's proxy to route traffic
+    # Note: Use 'expose' not 'ports' - Coolify handles the external port mapping
+    expose:
+      - "80"
     labels:
       - "coolify.managed=true"
     healthcheck:
