@@ -29,6 +29,8 @@ services:
     depends_on:
       db:
         condition: service_healthy
+    ports:
+      - "8000"
     environment:
       # Environment
       ENVIRONMENT: ${ENVIRONMENT:-prod}
@@ -107,7 +109,8 @@ services:
     depends_on:
       backend:
         condition: service_healthy
-    # Coolify handles port mapping through its proxy - no need to expose ports
+    ports:
+      - "80"
     labels:
       - "coolify.managed=true"
     healthcheck:
